@@ -1,1 +1,8 @@
 /obj
+./ConcurentServer/bin
+./ConcurentModels/bin
+./ConcurentServer/obj
+./ConcurentModels/obj
+
+./SpamClient/bin
+./SpamClient/obj
