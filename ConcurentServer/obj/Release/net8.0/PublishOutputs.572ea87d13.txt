@@ -1,0 +1,15 @@
+/Users/matusyan/csproj/pizda/ConcurentServer/ConcurentServer/bin/Release/net8.0/publish/ConcurentServer
+/Users/matusyan/csproj/pizda/ConcurentServer/ConcurentServer/bin/Release/net8.0/publish/appsettings.Development.json
+/Users/matusyan/csproj/pizda/ConcurentServer/ConcurentServer/bin/Release/net8.0/publish/appsettings.json
+/Users/matusyan/csproj/pizda/ConcurentServer/ConcurentServer/bin/Release/net8.0/publish/ConcurentServer.dll
+/Users/matusyan/csproj/pizda/ConcurentServer/ConcurentServer/bin/Release/net8.0/publish/ConcurentServer.deps.json
+/Users/matusyan/csproj/pizda/ConcurentServer/ConcurentServer/bin/Release/net8.0/publish/ConcurentServer.runtimeconfig.json
+/Users/matusyan/csproj/pizda/ConcurentServer/ConcurentServer/bin/Release/net8.0/publish/ConcurentServer.pdb
+/Users/matusyan/csproj/pizda/ConcurentServer/ConcurentServer/bin/Release/net8.0/publish/Coravel.dll
+/Users/matusyan/csproj/pizda/ConcurentServer/ConcurentServer/bin/Release/net8.0/publish/Microsoft.AspNetCore.OpenApi.dll
+/Users/matusyan/csproj/pizda/ConcurentServer/ConcurentServer/bin/Release/net8.0/publish/Microsoft.OpenApi.dll
+/Users/matusyan/csproj/pizda/ConcurentServer/ConcurentServer/bin/Release/net8.0/publish/Swashbuckle.AspNetCore.Swagger.dll
+/Users/matusyan/csproj/pizda/ConcurentServer/ConcurentServer/bin/Release/net8.0/publish/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/matusyan/csproj/pizda/ConcurentServer/ConcurentServer/bin/Release/net8.0/publish/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/matusyan/csproj/pizda/ConcurentServer/ConcurentServer/bin/Release/net8.0/publish/ConcurentModels.dll
+/Users/matusyan/csproj/pizda/ConcurentServer/ConcurentServer/bin/Release/net8.0/publish/ConcurentModels.pdb

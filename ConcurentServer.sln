@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurentServer", "Concuren
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurentModels", "ConcurentModels\ConcurentModels.csproj", "{650C86F7-183D-48C6-9154-B83D995B459A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpamClient", "SpamClient\SpamClient.csproj", "{3006BA5C-371F-4647-A4D4-FBE912E95A59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{650C86F7-183D-48C6-9154-B83D995B459A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{650C86F7-183D-48C6-9154-B83D995B459A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{650C86F7-183D-48C6-9154-B83D995B459A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3006BA5C-371F-4647-A4D4-FBE912E95A59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3006BA5C-371F-4647-A4D4-FBE912E95A59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3006BA5C-371F-4647-A4D4-FBE912E95A59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3006BA5C-371F-4647-A4D4-FBE912E95A59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

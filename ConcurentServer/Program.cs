@@ -12,9 +12,7 @@ services
     .AddEndpointsApiExplorer()
     .AddSwaggerGen()
     .AddServices()
-    .AddScheduler()
-    .AddJobs();
-// services.AddControllers();
+    .ConfigureServiceOptions(builder.Configuration);
 
 var app = builder.Build();
 
@@ -23,14 +21,6 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-    var sp = app.Services;
-    sp.UseScheduler(scheduler =>
-    {
-        scheduler.OnWorker("Tasks");
-        scheduler
-            .Schedule<ScheduledServiceJob>()
-            .EveryTenSeconds();
-    });
 }
 
 // app.MapControllers();

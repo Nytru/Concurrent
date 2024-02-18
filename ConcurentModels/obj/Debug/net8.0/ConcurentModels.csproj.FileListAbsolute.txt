@@ -9,3 +9,4 @@
 /Users/matusyan/csproj/pizda/ConcurentServer/ConcurentModels/obj/Debug/net8.0/refint/ConcurentModels.dll
 /Users/matusyan/csproj/pizda/ConcurentServer/ConcurentModels/obj/Debug/net8.0/ConcurentModels.pdb
 /Users/matusyan/csproj/pizda/ConcurentServer/ConcurentModels/obj/Debug/net8.0/ref/ConcurentModels.dll
+/Users/matusyan/csproj/pizda/ConcurentServer/ConcurentModels/obj/Debug/net8.0/ConcurentModels.sourcelink.json
