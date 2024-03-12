@@ -13,7 +13,7 @@ st.Start();
 try
 {
     Console.WriteLine("All start");
-    const int requestsCount = 400_000;
+    const int requestsCount = 40;
 
     await Parallel.ForAsync(0, requestsCount, async (i, token) =>
     {

@@ -1,8 +1,5 @@
-/obj
-./ConcurentServer/bin
-./ConcurentModels/bin
-./ConcurentServer/obj
-./ConcurentModels/obj
-
+.idea
+**/bin
+**/obj
 ./SpamClient/bin
 ./SpamClient/obj

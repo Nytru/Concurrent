@@ -33,9 +33,9 @@ public static class ApiEndpoints
         return result.AsResult();
     }
 
-    private static IResult Switch([FromRoute] bool state, SwitchService service)
+    private static IResult Switch([FromRoute] bool state, TasksService service)
     {
-        var result = service.Switch(state);
-        return result.AsResult();
+        service.Pause(state);
+        return Results.Ok();
     }
 }

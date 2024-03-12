@@ -9,13 +9,17 @@ namespace ConcurentServer.Services;
 public class TasksService
 {
     public static volatile int Counter;
+    private volatile bool _paused = false;
+
     private static readonly object Lock = new();
-    private readonly SemaphoreSlim _semaphore;
+    private SemaphoreSlim _semaphore;
     private volatile Dictionary<Guid, (DateTime Date, ITask Task)> _dictionary = new();
+    private SemaphoreOptions _options;
 
     public TasksService(IOptions<SemaphoreOptions> options)
     {
-        _semaphore = new SemaphoreSlim(options.Value.MaxValue, options.Value.MaxValue);
+        _options = options.Value;
+        _semaphore = new SemaphoreSlim(_options.MaxValue, _options.MaxValue);
     }
 
     public OperationResult<Guid> AddTask(ITask cringeTask)
@@ -39,6 +43,35 @@ public class TasksService
         return new OperationResult();
     }
 
+    private static volatile int _took;
+    public void Pause(bool state)
+    {
+        lock (Lock)
+        {
+            if (_paused == state)
+                return;
+
+            _paused = state;
+            if (_paused)
+            {
+                while (_semaphore.CurrentCount > 0)
+                {
+                    _semaphore.Wait();
+                    Interlocked.Increment(ref _took);
+                }
+            }
+            else
+            {
+                for (var i = 0; i < _took; i++)
+                {
+                    _semaphore.Release();
+                }
+
+                Interlocked.Add(ref _took, -_took);
+            }
+        }
+    }
+
     private OperationResult<ITask> GetNext()
     {
         KeyValuePair<Guid, (DateTime Date, ITask Task)> task;
@@ -56,10 +89,10 @@ public class TasksService
         try
         {
             await _semaphore.WaitAsync();
-            var t = GetNext();
-            if (t.Success)
+            var result = GetNext();
+            if (result.Success)
             {
-                await t.Value.Complete();
+                await result.Value.Complete();
                 Console.WriteLine(Interlocked.Increment(ref Counter));
             }
         }
